@@ -1,6 +1,6 @@
 Package.describe({
   "summary": "Reactive Data Source for Search",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "git": "https://github.com/meteorhacks/search-source.git",
   "name": "meteorhacks:search-source"
 });
@@ -21,14 +21,14 @@ Package.onTest(function(api) {
 });
 
 function configurePackage(api) {
-  api.versionsFrom('1.9');
+  api.versionsFrom('2.3');
   api.use([
     'tracker', 'mongo', 'reactive-var',
     'http', 'ejson'
   ], ['client']);
 
   api.use(['ejson', 'check', 'ddp'], ['server']);
-  
+
   api.use('communitypackages:picker@1.1.0', 'server');
 
   api.use('ecmascript');
