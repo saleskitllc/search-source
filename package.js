@@ -6,7 +6,7 @@ Package.describe({
 });
 
 Npm.depends({
-  "body-parser": "1.19.0"
+  "body-parser": "1.18.3"
 });
 
 Package.onUse(function(api) {
@@ -21,7 +21,7 @@ Package.onTest(function(api) {
 });
 
 function configurePackage(api) {
-  api.versionsFrom('2.3');
+  api.versionsFrom(['1.9', '2.3']);
   api.use([
     'tracker', 'mongo', 'reactive-var',
     'http', 'ejson'
